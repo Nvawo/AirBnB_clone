@@ -1,2 +1,10 @@
 #!/usr/bin/python3
-"""Module docstring."""
+"""Defines the Amenity class."""
+
+from models.base_model import BaseModel
+
+
+class Amenity(BaseModel):
+    """Amenity model."""
+
+    name = ""
