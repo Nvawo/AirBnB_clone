@@ -1,2 +1,11 @@
 #!/usr/bin/python3
-"""Module docstring."""
+"""Defines the City class."""
+
+from models.base_model import BaseModel
+
+
+class City(BaseModel):
+    """City model."""
+
+    state_id = ""
+    name = ""
