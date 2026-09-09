@@ -1,14 +1,10 @@
 #!/usr/bin/python3
-"""
-Module for the entry point of the command interpreter.
-"""
 import cmd
 
 
 class HBNBCommand(cmd.Cmd):
-    """
-    Command interpreter for the AirBnB clone project.
-    """
+    """Simple command interpreter for the AirBnB project."""
+
     prompt = '(hbnb) '
 
     def do_quit(self, arg):
@@ -17,11 +13,11 @@ class HBNBCommand(cmd.Cmd):
 
     def do_EOF(self, arg):
         """EOF command to exit the program"""
-        print("")
+        print()
         return True
 
     def emptyline(self):
-        """Do nothing on empty input line"""
+        """Do nothing when an empty line is entered."""
         pass
 
 
